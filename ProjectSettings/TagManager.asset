@@ -7,6 +7,9 @@ TagManager:
   - Tilt
   - Moving
   - Pancake
+  - MuffinTin
+  - Note
+  - Particle
   layers:
   - Default
   - TransparentFX
@@ -16,10 +19,7 @@ TagManager:
   - UI
   - Camera
   - 
-  - 
-  - 
-  - 
-  - 
+  - Bowl
   - 
   - 
   - 
@@ -43,9 +43,6 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Background
-    uniqueID: 4260049765
     locked: 0
   m_RenderingLayers:
   - Default
