@@ -67,7 +67,7 @@ public class GhostManager : MonoBehaviour
         {
             Ghost ghost = GetGhostScriptableFromName(name);
             if (ghost != null)
-                if (ghost.numStory - 1 <= ghostNameToStoryIndex[name])
+                if (ghost.numStory <= ghostNameToStoryIndex[name])
                 {
                     Debug.Log("Reached end of dialogue, will not increment");
                 }
@@ -177,6 +177,18 @@ public class GhostManager : MonoBehaviour
                 activeGhosts[i] = null;
             }
         }
+    }
+
+    public int GetSeatNum(Ghost ghost)
+    {
+        for (int i = 0; i < activeGhosts.Length; i++)
+        {
+            if (activeGhosts[i] == ghost)
+            {
+                return i;
+            }
+        }
+        return -1;
     }
 
 }
